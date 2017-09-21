@@ -9,8 +9,8 @@ def for_os(filesname):
 		filesname = filesname.replace('(','\(')
 		filesname = filesname.replace(')','\)')
 
-	#if osname == "win32":
-		
+	if osname == "win32":
+		filesname = '"'+filesname+'"'
 
 	return filesname
 
